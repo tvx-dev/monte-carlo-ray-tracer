@@ -1,8 +1,8 @@
 {
 	"settings":
 	{
-		"sqrtspp": 8,
-		"savename": "hexagon-test8"
+		"sqrtspp": 4,
+		"savename": "hexagon-test11"
 	},
 
 	"cameras":
@@ -21,8 +21,8 @@
 			"sensor_width": 35,
 			"eye": [-1, 0, 0],
 			"look_at": [13, -2.14, 0],
-			"width": 960,
-			"height": 540
+			"width": 1920,
+			"height": 1080
 		}
 	],
 
@@ -66,8 +66,8 @@
 		{
 			"name": "rough-gray",
 			"specular": false,
-			"roughness": 0.5,
-			"reflectance": [0.2, 0.2, 0.2], 
+			"roughness": 100,
+			"reflectance": [1.0, 1.0, 1.0], 
 			"emittance": [0, 0, 0]
 		},
 		{
@@ -185,6 +185,7 @@
 		{
 			"origin": [7.06462,-0.811435,-2.08262],
 			"radius": 1.0242996,
+			"material": "mirror",
 			"type": "sphere"
 		},
 		{
