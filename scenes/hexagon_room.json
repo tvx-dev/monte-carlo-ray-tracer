@@ -1,221 +1,221 @@
 {
 	"settings":
 	{
-		"sqrtspp": 4,
-		"savename": "testing"
+		"sqrtspp": 44,
+		"savename": "44sqrtspp-hexagon"
 	},
 
-  "cameras":
-  [
-  	{
-  		"focal_length": 18,
-    	"sensor_width": 35,
-    	"eye": [-2, 0, 0],
-    	"forward": [0, 0, -1],
-    	"up": [0, 1, 0],
-    	"lookat": [13, -0.4, 0],
-    	"image_size": [960, 540]
-  	},
+	"cameras":
+	[
 		{
-  		"focal_length": 50,
-    	"sensor_width": 35,
-    	"eye": [-1, 0, 0],
-    	"forward": [0, 0, -1],
-    	"up": [0, 1, 0],
-    	"image_size": [960, 540]
-  	}
-  ],
+			"focal_length": 18,
+			"sensor_width": 35,
+			"eye": [-2, 0, 0],
+			"forward": [0, 0, -1],
+			"up": [0, 1, 0],
+			"lookat": [13, -0.4, 0],
+			"image_size": [1920, 1080]
+		},
+		{
+			"focal_length": 50,
+			"sensor_width": 35,
+			"eye": [-1, 0, 0],
+			"forward": [0, 0, -1],
+			"up": [0, 1, 0],
+			"image_size": [960, 540]
+		}
+	],
 
-  "materials": 
-  [
-    {
-      "name": "default",
-      "specular": false,
-      "roughness": 0.0,
-      "reflectance": [0.8, 0.8, 0.8],
-      "emittance": [0, 0, 0]
-    },
-    {
-      "name": "red",
-      "specular": false,
-      "roughness": 0.0,
-      "reflectance": [1.0, 0.5, 0.5],
-      "emittance": [0, 0, 0]
-    },
-    {
-      "name": "green",
-      "specular": false,
-      "roughness": 0.5,
-      "reflectance": [0.5, 1.0, 0.5], 
-      "emittance": [0, 0, 0]
-    },
-    {
-      "name": "blue",
-      "specular": false,
-      "roughness": 0.5,
-      "reflectance": [0.5, 0.9, 1.0], 
-      "emittance": [0, 0, 0]
-    },
-    {
-      "name": "light",
-      "specular": false,
-      "roughness": 0.0,
-      "reflectance": [0.8, 0.8, 0.8],
-      "emittance": [60, 60, 60]
-    }
-  ],
+	"materials": 
+	[
+		{
+			"name": "default",
+			"specular": false,
+			"roughness": 0.0,
+			"reflectance": [0.8, 0.8, 0.8],
+			"emittance": [0, 0, 0]
+		},
+		{
+			"name": "red",
+			"specular": false,
+			"roughness": 0.0,
+			"reflectance": [1.0, 0.5, 0.5],
+			"emittance": [0, 0, 0]
+		},
+		{
+			"name": "green",
+			"specular": false,
+			"roughness": 0.5,
+			"reflectance": [0.5, 1.0, 0.5], 
+			"emittance": [0, 0, 0]
+		},
+		{
+			"name": "blue",
+			"specular": false,
+			"roughness": 0.5,
+			"reflectance": [0.5, 0.9, 1.0], 
+			"emittance": [0, 0, 0]
+		},
+		{
+			"name": "light",
+			"specular": false,
+			"roughness": 0.0,
+			"reflectance": [0.8, 0.8, 0.8],
+			"emittance": [60, 60, 60]
+		}
+	],
 
-  "vertices":
-  [
-  	[-3, 5, 0], [0, 5, -6], [10, 5, -6], [13, 5, 0], [10, 5, 6], [0, 5, 6],
-  	[-3, -5, 0], [0, -5, -6], [10, -5, -6], [13, -5, 0], [10, -5, 6], [0, -5, 6]
-  ],
+	"vertices":
+	[
+		[-3, 5, 0], [0, 5, -6], [10, 5, -6], [13, 5, 0], [10, 5, 6], [0, 5, 6],
+		[-3, -5, 0], [0, -5, -6], [10, -5, -6], [13, -5, 0], [10, -5, 6], [0, -5, 6]
+	],
 
-  "surfaces":
-  [
-  	{
-  		"type": "object",
-  		"triangles": [[0, 5, 4], [0, 4, 3], [0, 3, 1], [1, 3, 2]]
-  	},
-  	{
-  		"type": "object",
-  		"material": "green",
-  		"triangles": [[6, 10, 11], [6, 9, 10], [6, 7, 9], [7, 8, 9]]
-  	},
-  	{
-  		"type": "object",
-  		"material": "red",
-  		"triangles": [[0, 7, 6], [0, 1, 7]]
-  	},
-  	{
-  		"type": "object",
-  		"material": "blue",
-  		"triangles": [[1, 8, 7], [1, 2, 8]]
-  	},
-  	{
-  		"type": "object",
-  		"material": "red",
-  		"triangles": [[2, 3, 9], [2, 9, 8]]
-  	},
-  	{
-  		"type": "object",
-  		"material": "blue",
-  		"triangles": [[3, 4, 10], [3, 10, 9]]
-  	},
-  	{
-  		"type": "object",
-  		"material": "red",
-  		"triangles": [[5, 10, 4], [5, 11, 10]]
-  	},
-  	{
-  		"type": "object",
-  		"material": "blue",
-  		"triangles": [[0, 11, 5], [0, 6, 11]]
-  	},
-  	{
-  		"type": "triangle",
-  		"material": "light",
-  		"vertices": [[9, 4.5, -0.5], [9, 4.5, 0.5], [10, 4.5, 0.5]]
-  	},
-  	{
-  		"type": "triangle",
-  		"material": "light",
-  		"vertices": [[9, 4.5, -0.5], [10, 4.5, 0.5], [10, 4.5, -0.5]]
-  	},
-  	{
-      "origin": [8.71601,-1.90013,0.413314],
-      "radius": 0.9640751999999999,
-      "type": "sphere"
-    },
-    {
-      "origin": [9.25261,-3.70517,-0.58328],
-      "radius": 1.1665116,
-      "type": "sphere"
-    },
-    {
-      "origin": [10.6377,-2.65686,0.997646],
-      "radius": 1.1822652,
-      "type": "sphere"
-    },
-    {
-      "origin": [ 7.218490000000001, -3.4637000000000002, 0.227686],
-      "radius": 1.0375392,
-      "type": "sphere"
-    },
-    {
-      "origin": [8.7205,-3.49102,1.5892],
-      "radius": 0.9909984,
-      "type": "sphere"
-    },
-    {
-      "origin": [10.8402,-2.19439,-1.25316],
-      "radius": 1.1256636,
-      "type": "sphere"
-    },
-    {
-      "origin": [9.256029999999999,-1.7106999999999999,2.54759],
-      "radius": 1.1012616,
-      "type": "sphere"
-    },
-    {
-      "origin": [7.55212,-2.93652,-1.7454],
-      "radius": 1.03188,
-      "type": "sphere"
-    },
-    {
-      "origin": [11.446,-0.792043,0.217204],
-      "radius": 0.995082,
-      "type": "sphere"
-    },
-    {
-      "origin": [7.09813,-1.92594,1.82701],
-      "radius": 1.1845884,
-      "type": "sphere"
-    },
-    {
-      "origin": [9.06232,-1.56227,-2.5407100000000002],
-      "radius": 1.1594532,
-      "type": "sphere"
-    },
-    {
-      "origin": [10.161100000000001,0.149198,1.6561000000000001],
-      "radius": 1.1516556,
-      "type": "sphere"
-    },
-    {
-      "origin": [6.188540000000001,-1.62134,-0.284392],
-      "radius": 1.1353848,
-      "type": "sphere"
-    },
-    {
-      "origin": [7.06462,-0.811435,-2.08262],
-      "radius": 1.0242996,
-      "type": "sphere"
-    },
-    {
-      "origin": [8.169,0.0437421,2.37892],
-      "radius": 0.9702491999999999,
-      "type": "sphere"
-    },
-    {
-      "origin": [7.703600000000001,-0.0232834,0.315095],
-      "radius": 1.1476452,
-      "type": "sphere"
-    },
-    {
-      "origin": [10.494200000000001,0.010291600000000001,-1.49261],
-      "radius": 1.1201075999999999,
-      "type": "sphere"
-    },
-    {
-      "origin": [8.4163,0.772444,-1.66188],
-      "radius": 1.1007263999999999,
-      "type": "sphere"
-    },
-    {
-      "origin": [9.881820000000001,1.3897700000000002,-0.0443936],
-      "radius": 0.9721367999999999,
-      "type": "sphere"
-    }
-  ]
+	"surfaces":
+	[
+		{
+			"type": "object",
+			"triangles": [[0, 5, 4], [0, 4, 3], [0, 3, 1], [1, 3, 2]]
+		},
+		{
+			"type": "object",
+			"material": "green",
+			"triangles": [[6, 10, 11], [6, 9, 10], [6, 7, 9], [7, 8, 9]]
+		},
+		{
+			"type": "object",
+			"material": "red",
+			"triangles": [[0, 7, 6], [0, 1, 7]]
+		},
+		{
+			"type": "object",
+			"material": "blue",
+			"triangles": [[1, 8, 7], [1, 2, 8]]
+		},
+		{
+			"type": "object",
+			"material": "red",
+			"triangles": [[2, 3, 9], [2, 9, 8]]
+		},
+		{
+			"type": "object",
+			"material": "blue",
+			"triangles": [[3, 4, 10], [3, 10, 9]]
+		},
+		{
+			"type": "object",
+			"material": "red",
+			"triangles": [[5, 10, 4], [5, 11, 10]]
+		},
+		{
+			"type": "object",
+			"material": "blue",
+			"triangles": [[0, 11, 5], [0, 6, 11]]
+		},
+		{
+			"type": "triangle",
+			"material": "light",
+			"vertices": [[9, 4.5, -0.5], [9, 4.5, 0.5], [10, 4.5, 0.5]]
+		},
+		{
+			"type": "triangle",
+			"material": "light",
+			"vertices": [[9, 4.5, -0.5], [10, 4.5, 0.5], [10, 4.5, -0.5]]
+		},
+		{
+			"origin": [8.71601,-1.90013,0.413314],
+			"radius": 0.9640751999999999,
+			"type": "sphere"
+		},
+		{
+			"origin": [9.25261,-3.70517,-0.58328],
+			"radius": 1.1665116,
+			"type": "sphere"
+		},
+		{
+			"origin": [10.6377,-2.65686,0.997646],
+			"radius": 1.1822652,
+			"type": "sphere"
+		},
+		{
+			"origin": [7.218490000000001, -3.4637000000000002, 0.227686],
+			"radius": 1.0375392,
+			"type": "sphere"
+		},
+		{
+			"origin": [8.7205,-3.49102,1.5892],
+			"radius": 0.9909984,
+			"type": "sphere"
+		},
+		{
+			"origin": [10.8402,-2.19439,-1.25316],
+			"radius": 1.1256636,
+			"type": "sphere"
+		},
+		{
+			"origin": [9.256029999999999,-1.7106999999999999,2.54759],
+			"radius": 1.1012616,
+			"type": "sphere"
+		},
+		{
+			"origin": [7.55212,-2.93652,-1.7454],
+			"radius": 1.03188,
+			"type": "sphere"
+		},
+		{
+			"origin": [11.446,-0.792043,0.217204],
+			"radius": 0.995082,
+			"type": "sphere"
+		},
+		{
+			"origin": [7.09813,-1.92594,1.82701],
+			"radius": 1.1845884,
+			"type": "sphere"
+		},
+		{
+			"origin": [9.06232,-1.56227,-2.5407100000000002],
+			"radius": 1.1594532,
+			"type": "sphere"
+		},
+		{
+			"origin": [10.161100000000001,0.149198,1.6561000000000001],
+			"radius": 1.1516556,
+			"type": "sphere"
+		},
+		{
+			"origin": [6.188540000000001,-1.62134,-0.284392],
+			"radius": 1.1353848,
+			"type": "sphere"
+		},
+		{
+			"origin": [7.06462,-0.811435,-2.08262],
+			"radius": 1.0242996,
+			"type": "sphere"
+		},
+		{
+			"origin": [8.169,0.0437421,2.37892],
+			"radius": 0.9702491999999999,
+			"type": "sphere"
+		},
+		{
+			"origin": [7.703600000000001,-0.0232834,0.315095],
+			"radius": 1.1476452,
+			"type": "sphere"
+		},
+		{
+			"origin": [10.494200000000001,0.010291600000000001,-1.49261],
+			"radius": 1.1201075999999999,
+			"type": "sphere"
+		},
+		{
+			"origin": [8.4163,0.772444,-1.66188],
+			"radius": 1.1007263999999999,
+			"type": "sphere"
+		},
+		{
+			"origin": [9.881820000000001,1.3897700000000002,-0.0443936],
+			"radius": 0.9721367999999999,
+			"type": "sphere"
+		}
+	]
 }
