@@ -1,9 +1,7 @@
 {
-	"settings":
-	{
-		"sqrtspp": 32,
-		"savename": "oren_nayar_test"
-	},
+	"ior": 1.0,
+	"sqrtspp": 8,
+	"savename": "oren_nayar_test2",
 
 	"cameras":
 	[
@@ -97,7 +95,7 @@
 	[
 		{
 			"type": "object",
-			"set": 0, "triangles": [[0, 3, 2], [0, 2, 1]]
+			"set": 0, "triangles": [[0, 2, 3], [0, 1, 2]]
 		},
 		{
 			"type": "sphere",
