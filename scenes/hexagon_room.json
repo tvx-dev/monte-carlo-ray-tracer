@@ -1,6 +1,6 @@
 {
-	"sqrtspp": 4,
-	"savename": "hexagon-test",
+	"sqrtspp": 8,
+	"savename": "roulette_light_test",
 	"ior": 1.0,
 
 	"cameras":
@@ -63,7 +63,7 @@
 		{
 			"name": "light",
 			"reflectance": [0.8, 0.8, 0.8],
-			"emittance": [225, 225, 225]
+			"emittance": [300, 300, 300]
 		}
 	],
 
