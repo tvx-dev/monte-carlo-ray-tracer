@@ -1,7 +1,8 @@
 {
-	"sqrtspp": 8,
-	"savename": "roulette_light_test",
+	"sqrtspp": 4,
+	"savename": "new_ray_structure_nonnaive",
 	"ior": 1.0,
+	"naive": false,
 
 	"cameras":
 	[
@@ -9,8 +10,8 @@
 			"focal_length": 18,
 			"sensor_width": 35,
 			"eye": [-2, 0, 0],
-			"forward": [0.99964, -0.02666, 0],
-			"up": [0.02666, 0.99964, 0],
+			"up": [0, 1, 0],
+			"forward":[1, 0, 0],
 			"width": 960,
 			"height": 540
 		},
@@ -21,6 +22,14 @@
 			"look_at": [13, -2.14, 0],
 			"width": 960,
 			"height": 540
+		},
+		{
+			"focal_length": 120,
+			"sensor_width": 35,
+			"eye": [-1, 0, 0],
+			"look_at": [7.06462, -0.81144, -2.08262],
+			"width": 720,
+			"height": 720
 		}
 	],
 
@@ -28,7 +37,7 @@
 	[
 		{
 			"name": "default",
-			"reflectance": [0.6, 0.6, 0.6]
+			"reflectance": [0.7, 0.7, 0.7]
 		},
 		{
 			"name": "red",
@@ -43,17 +52,46 @@
 			"reflectance": [0.218, 0.759, 1.0]
 		},
 		{
+			"name": "transparent-2.4",
+			"transparency": 0.8,
+			"reflectance": [1, 1, 1],
+			"specular_reflectance": [1, 1, 1],
+			"ior": 2.4
+		},
+		{
+			"name": "transparent-1.17",
+			"transparency": 1.0,
+			"specular_reflectance": [0.999, 0.999, 0.999],
+			"ior": 1.17
+		},
+		{
+			"name": "transparent-3.1",
+			"transparency": 0.0,
+			"reflectance": [0, 0.109375, 0.25],
+			"specular_reflectance": [0.999, 0.999, 0.999],
+			"ior": 3.1
+		},
+		{
 			"name": "diamond",
-			"transparent": true,
+			"transparency": 1.0,
 			"specular_reflectance": [0.999, 0.999, 0.999],
 			"ior": 2.5
 		},
 		{
 			"name": "plastic",
-			"transparent": false,
+			"reflectance": [0.6, 0.6, 0.6]
+		},
+		{
+			"name": "plastic_temp",
+			"transparency": 0.0,
 			"reflectance": [0, 0.109375, 0.25],
 			"specular_reflectance": [0.999, 0.999, 0.999],
 			"ior": 1.5
+		},
+		{
+			"name": "mirror",
+			"perfect_specular": true,
+			"specular_reflectance": [0.999, 0.999, 0.999]
 		},
 		{
 			"name": "rough-gray",
@@ -74,7 +112,7 @@
 			[-3, -5, 0], [0, -5, -6], [10, -5, -6], [13, -5, 0], [10, -5, 6], [0, -5, 6]
 		],
 		[
-			[8, 4.9, -1.5], [9, 4.9, -1.5], [9, 4.9, -0.5], [8, 4.9, -0.5]
+			[8, 4.9, -2.5], [9, 4.9, -2.5], [9, 4.9, -1.5], [8, 4.9, -1.5]
 		]
 	],
 
@@ -119,7 +157,7 @@
 			"set": 0, "triangles": [[0, 5, 11], [0, 11, 6]]
 		},
 		{
-			"type": "object",
+			"type": "objectsdaa",
 			"material": "light",
 			"set": 1, "triangles": [[0, 1, 2], [0, 2, 3]]
 		},
@@ -146,7 +184,7 @@
 		{
 			"origin": [7.55212,-2.93652,-1.7454],
 			"radius": 1.03188,
-			"material": "plastic",
+			"material": "mirror",
 			"type": "sphere"
 		},
 		{
@@ -166,20 +204,20 @@
 		},
 		{
 			"origin": [6.18854,-1.62134,-0.284392],
+			"material": "transparent-2.4",
 			"radius": 1.1353848,
-			"material": "diamond",
 			"type": "sphere"
 		},
 		{
 			"origin": [7.06462,-0.811435,-2.08262],
+			"material": "transparent-3.1",
 			"radius": 1.0242996,
-			"material": "diamond",
 			"type": "sphere"
 		},
 		{
 			"origin": [8.169,0.0437421,2.37892],
+			"material": "transparent-1.17",
 			"radius": 0.97024919,
-			"material": "diamond",
 			"type": "sphere"
 		},
 		{
@@ -203,6 +241,12 @@
 			"radius": 0.97213679,
 			"material": "plastic",
 			"type": "sphere"
+		},
+		{
+			"origin": [8.50, 4.40, -2.00],
+			"radius": 0.5,
+			"type": "sphere",
+			"material": "light"
 		}
 	]
 }
