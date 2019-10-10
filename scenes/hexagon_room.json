@@ -1,19 +1,18 @@
 {
-	"sqrtspp": 128,
-	"savename": "new_ray_structure_nonnaive",
+	"sqrtspp": 108,
+	"savename": "test",
 	"ior": 1.0,
 	"naive": false,
 
 	"cameras":
 	[
 		{
-			"focal_length": 18,
+			"focal_length": 21,
 			"sensor_width": 35,
 			"eye": [-2, 0, 0],
-			"up": [0, 1, 0],
-			"forward":[1, 0, 0],
-			"width": 960,
-			"height": 540
+			"look_at": [13, -2.15, 0],
+			"width": 1280,
+			"height": 720
 		},
 		{
 			"focal_length": 24,
@@ -53,15 +52,15 @@
 		},
 		{
 			"name": "transparent-2.4",
-			"transparency": 0.8,
+			"transparency": 0.7,
 			"reflectance": [1, 1, 1],
 			"specular_reflectance": [1, 1, 1],
-			"ior": 2.4
+			"ior": 1.5
 		},
 		{
 			"name": "transparent-1.17",
 			"transparency": 1.0,
-			"specular_reflectance": [0.999, 0.999, 0.999],
+			"specular_reflectance": [0.3, 1.0, 0.3],
 			"ior": 1.17
 		},
 		{
