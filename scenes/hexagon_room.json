@@ -1,5 +1,5 @@
 {
-  "sqrtspp": 4,
+  "sqrtspp": 6,
   "threads": 7,
   "naive": false,
   "savename": "new_test_squarelight9",
