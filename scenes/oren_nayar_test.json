@@ -1,149 +1,149 @@
 {
-	"ior": 1.0,
-	"sqrtspp": 8,
-	"savename": "testing",
+  "ior": 1.0,
+  "sqrtspp": 8,
+  "savename": "testing",
 
-	"cameras":
-	[
-		{
-			"focal_length": 300,
-			"sensor_width": 35,
-			"eye": [-80, 40, 80],
-			"look_at": [0, 1, 0],
-			"width": 1920,
-			"height": 960
-		}
-	],
+  "cameras":
+  [
+    {
+      "focal_length": 300,
+      "sensor_width": 35,
+      "eye": [-80, 40, 80],
+      "look_at": [0, 1, 0],
+      "width": 1920,
+      "height": 960
+    }
+  ],
 
-	"materials": 
-	[
-		{
-			"name": "default",
-			"specular": false,
-			"roughness": 0.0,
-			"reflectance": [0.8, 0.8, 0.8],
-			"emittance": [0, 0, 0]
-		},
-		{
-			"name": "gray_0.0",
-			"specular": false,
-			"roughness": 0,
-			"reflectance": [0.8, 0.8, 0.8], 
-			"emittance": [0, 0, 0]
-		},
-		{
-			"name": "gray_0.25",
-			"specular": false,
-			"roughness": 0.25,
-			"reflectance": [0.8, 0.8, 0.8], 
-			"emittance": [0, 0, 0]
-		},
-		{
-			"name": "gray_0.5",
-			"specular": false,
-			"roughness": 0.5,
-			"reflectance": [0.8, 0.8, 0.8], 
-			"emittance": [0, 0, 0]
-		},
-		{
-			"name": "gray_1.0",
-			"specular": false,
-			"roughness": 1.0,
-			"reflectance": [0.8, 0.8, 0.8], 
-			"emittance": [0, 0, 0]
-		},
-		{
-			"name": "gray_2.0",
-			"specular": false,
-			"roughness": 2.0,
-			"reflectance": [0.8, 0.8, 0.8], 
-			"emittance": [0, 0, 0]
-		},
-		{
-			"name": "gray_4.0",
-			"specular": false,
-			"roughness": 4.0,
-			"reflectance": [0.8, 0.8, 0.8], 
-			"emittance": [0, 0, 0]
-		},
-		{
-			"name": "gray_8.0",
-			"specular": false,
-			"roughness": 8.0,
-			"reflectance": [0.8, 0.8, 0.8], 
-			"emittance": [0, 0, 0]
-		},
-		{
-			"name": "gray_16.0",
-			"specular": false,
-			"roughness": 16.0,
-			"reflectance": [0.8, 0.8, 0.8], 
-			"emittance": [0, 0, 0]
-		}
-	],
+  "materials": 
+  [
+    {
+      "name": "default",
+      "specular": false,
+      "roughness": 0.0,
+      "reflectance": [0.8, 0.8, 0.8],
+      "emittance": [0, 0, 0]
+    },
+    {
+      "name": "gray_0.0",
+      "specular": false,
+      "roughness": 0,
+      "reflectance": [0.8, 0.8, 0.8], 
+      "emittance": [0, 0, 0]
+    },
+    {
+      "name": "gray_0.25",
+      "specular": false,
+      "roughness": 0.25,
+      "reflectance": [0.8, 0.8, 0.8], 
+      "emittance": [0, 0, 0]
+    },
+    {
+      "name": "gray_0.5",
+      "specular": false,
+      "roughness": 0.5,
+      "reflectance": [0.8, 0.8, 0.8], 
+      "emittance": [0, 0, 0]
+    },
+    {
+      "name": "gray_1.0",
+      "specular": false,
+      "roughness": 1.0,
+      "reflectance": [0.8, 0.8, 0.8], 
+      "emittance": [0, 0, 0]
+    },
+    {
+      "name": "gray_2.0",
+      "specular": false,
+      "roughness": 2.0,
+      "reflectance": [0.8, 0.8, 0.8], 
+      "emittance": [0, 0, 0]
+    },
+    {
+      "name": "gray_4.0",
+      "specular": false,
+      "roughness": 4.0,
+      "reflectance": [0.8, 0.8, 0.8], 
+      "emittance": [0, 0, 0]
+    },
+    {
+      "name": "gray_8.0",
+      "specular": false,
+      "roughness": 8.0,
+      "reflectance": [0.8, 0.8, 0.8], 
+      "emittance": [0, 0, 0]
+    },
+    {
+      "name": "gray_16.0",
+      "specular": false,
+      "roughness": 16.0,
+      "reflectance": [0.8, 0.8, 0.8], 
+      "emittance": [0, 0, 0]
+    }
+  ],
 
-	"vertices":
-	[
-		[
-			[-16, 0, 1], [16, 0, 1], 
-			[16, 0, -1], [-16, 0, -1]
-		]
-		
-	],
+  "vertices":
+  [
+    [
+      [-16, 0, 1], [16, 0, 1], 
+      [16, 0, -1], [-16, 0, -1]
+    ]
+    
+  ],
 
-	"surfaces":
-	[
-		{
-			"type": "object",
-			"set": 0, "triangles": [[0, 2, 3], [0, 1, 2]]
-		},
-		{
-			"type": "sphere",
-			"radius": 1,
-			"origin": [-7,1,0],
-			"material": "gray_0.0"
-		},
-		{
-			"type": "sphere",
-			"radius": 1,
-			"origin": [-5,1,0],
-			"material": "gray_0.25"
-		},
-		{
-			"type": "sphere",
-			"radius": 1,
-			"origin": [-3,1,0],
-			"material": "gray_0.5"
-		},
-		{
-			"type": "sphere",
-			"radius": 1,
-			"origin": [-1,1,0],
-			"material": "gray_1.0"
-		},
-		{
-			"type": "sphere",
-			"radius": 1,
-			"origin": [1,1,0],
-			"material": "gray_2.0"
-		},
-		{
-			"type": "sphere",
-			"radius": 1,
-			"origin": [3,1,0],
-			"material": "gray_4.0"
-		},
-		{
-			"type": "sphere",
-			"radius": 1,
-			"origin": [5,1,0],
-			"material": "gray_8.0"
-		},
-		{
-			"type": "sphere",
-			"radius": 1,
-			"origin": [7,1,0],
-			"material": "gray_16.0"
-		}
-	]
+  "surfaces":
+  [
+    {
+      "type": "object",
+      "set": 0, "triangles": [[0, 2, 3], [0, 1, 2]]
+    },
+    {
+      "type": "sphere",
+      "radius": 1,
+      "origin": [-7,1,0],
+      "material": "gray_0.0"
+    },
+    {
+      "type": "sphere",
+      "radius": 1,
+      "origin": [-5,1,0],
+      "material": "gray_0.25"
+    },
+    {
+      "type": "sphere",
+      "radius": 1,
+      "origin": [-3,1,0],
+      "material": "gray_0.5"
+    },
+    {
+      "type": "sphere",
+      "radius": 1,
+      "origin": [-1,1,0],
+      "material": "gray_1.0"
+    },
+    {
+      "type": "sphere",
+      "radius": 1,
+      "origin": [1,1,0],
+      "material": "gray_2.0"
+    },
+    {
+      "type": "sphere",
+      "radius": 1,
+      "origin": [3,1,0],
+      "material": "gray_4.0"
+    },
+    {
+      "type": "sphere",
+      "radius": 1,
+      "origin": [5,1,0],
+      "material": "gray_8.0"
+    },
+    {
+      "type": "sphere",
+      "radius": 1,
+      "origin": [7,1,0],
+      "material": "gray_16.0"
+    }
+  ]
 }

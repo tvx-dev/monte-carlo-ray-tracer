@@ -1,260 +1,248 @@
 {
-	"sqrtspp": 54,
-	"threads": 7,
-	"naive": false,
-	"savename": "4k_54sqrtspp_24h",
-	"ior": 1.0,
-	
-	"cameras":
-	[
-		{
-			"focal_length": 21,
-			"sensor_width": 35,
-			"eye": [-2, 0, 0],
-			"look_at": [13, -2, 0],
-			"width": 3840,
-			"height": 2160
-		},
-		{
-			"focal_length": 24,
-			"sensor_width": 35,
-			"eye": [-1, 0, 0],
-			"look_at": [13, -2.14, 0],
-			"width": 960,
-			"height": 540
-		},
-		{
-			"focal_length": 120,
-			"sensor_width": 35,
-			"eye": [-1, 0, 0],
-			"look_at": [7.06462, -0.81144, -2.08262],
-			"width": 720,
-			"height": 720
-		}
-	],
+  "sqrtspp": 8,
+  "threads": 7,
+  "naive": false,
+  "savename": "new_test_squarelight",
+  "ior": 1.0,
+  
+  "cameras":
+  [
+    {
+      "focal_length": 21,
+      "sensor_width": 35,
+      "eye": [-2, 0, 0],
+      "look_at": [13, -2, 0],
+      "width": 960,
+      "height": 540
+    },
+    {
+      "focal_length": 24,
+      "sensor_width": 35,
+      "eye": [-1, 0, 0],
+      "look_at": [13, -2.14, 0],
+      "width": 960,
+      "height": 540
+    },
+    {
+      "focal_length": 120,
+      "sensor_width": 35,
+      "eye": [-1, 0, 0],
+      "look_at": [7.06462, -0.81144, -2.08262],
+      "width": 720,
+      "height": 720
+    }
+  ],
 
-	"materials": 
-	[
-		{
-			"name": "default",
-			"reflectance": [0.7, 0.7, 0.7]
-		},
-		{
-			"name": "red",
-			"reflectance": [1.0, 0.218, 0.218]
-		},
-		{
-			"name": "green",
-			"ior": 1.2,
-			"specular_reflectance": [1,1,1],
-			"reflectance": [0.218, 1.0, 0.218]
-		},
-		{
-			"name": "blue",
-			"reflectance": [0.218, 0.759, 1.0]
-		},
-		{
-			"name": "transparent-2.4",
-			"transparency": 1,
-			"reflectance": [0, 0, 0],
-			"specular_reflectance": [1, 1, 1],
-			"ior": 2.4
-		},
-		{
-			"name": "transparent-1.17",
-			"transparency": 1.0,
-			"specular_reflectance": [1, 1, 1],
-			"ior": 1.17
-		},
-		{
-			"name": "transparent-3.1",
-			"transparency": 1.0,
-			"reflectance": [0, 0, 0],
-			"specular_reflectance": [0.8, 0.9, 1.0],
-			"ior": 2.6
-		},
-		{
-			"name": "diamond",
-			"transparency": 1.0,
-			"specular_reflectance": [0.999, 0.999, 0.999],
-			"ior": 2.5
-		},
-		{
-			"name": "plastic",
-			"reflectance": [0.6, 0.6, 0.6]
-		},
-		{
-			"name": "plastic_temp",
-			"transparency": 0.0,
-			"reflectance": [0, 0.109375, 0.25],
-			"specular_reflectance": [0.999, 0.999, 0.999],
-			"ior": 1.5
-		},
-		{
-			"name": "mirror",
-			"perfect_mirror": true,
-			"reflectance": [1, 1, 1],
-			"specular_reflectance": [0.999, 0.999, 0.999]
-		},
-		{
-			"name": "rough-gray",
-			"roughness": 100,
-			"reflectance": [1.0, 1.0, 1.0]
-		},
-		{
-			"name": "light",
-			"reflectance": [0.8, 0.8, 0.8],
-			"emittance": [450, 316, 300]
-		}
-	],
+  "materials": 
+  [
+    {
+      "name": "default",
+      "reflectance": [0.5, 0.5, 0.5]
+    },
+    {
+      "name": "red",
+      "reflectance": [1.0, 0.218, 0.218]
+    },
+    {
+      "name": "green",
+      "ior": 1.2,
+      "specular_reflectance": [1,1,1],
+      "reflectance": [0.218, 1.0, 0.218]
+    },
+    {
+      "name": "blue",
+      "reflectance": [0.218, 0.759, 1.0]
+    },
+    {
+      "name": "transparent-2.4",
+      "transparency": 1,
+      "reflectance": [0, 0, 0],
+      "specular_reflectance": [1, 1, 1],
+      "ior": 2.4
+    },
+    {
+      "name": "transparent-1.17",
+      "transparency": 1.0,
+      "specular_reflectance": [1, 1, 1],
+      "ior": 1.17
+    },
+    {
+      "name": "transparent-3.1",
+      "transparency": 1.0,
+      "reflectance": [0, 0, 0],
+      "specular_reflectance": [0.8, 0.9, 1.0],
+      "ior": 2.6
+    },
+    {
+      "name": "diamond",
+      "transparency": 1.0,
+      "specular_reflectance": [0.999, 0.999, 0.999],
+      "ior": 2.5
+    },
+    {
+      "name": "plastic",
+      "reflectance": [0.6, 0.6, 0.6]
+    },
+    {
+      "name": "plastic_temp",
+      "transparency": 0.0,
+      "reflectance": [0, 0.109375, 0.25],
+      "specular_reflectance": [0.999, 0.999, 0.999],
+      "ior": 1.5
+    },
+    {
+      "name": "mirror",
+      "perfect_mirror": true,
+      "reflectance": [1, 1, 1],
+      "specular_reflectance": [0.999, 0.999, 0.999]
+    },
+    {
+      "name": "rough-gray",
+      "roughness": 100,
+      "reflectance": [1.0, 1.0, 1.0]
+    },
+    {
+      "name": "light",
+      "reflectance": [0.8, 0.8, 0.8],
+      "emittance": [450, 316, 300]
+    }
+  ],
 
-	"vertices":
-	[
-		[
-			[-3, 5, 0], [0, 5, -6], [10, 5, -6], [13, 5, 0], [10, 5, 6], [0, 5, 6],
-			[-3, -5, 0], [0, -5, -6], [10, -5, -6], [13, -5, 0], [10, -5, 6], [0, -5, 6]
-		],
-		[
-			[8, 4.9, -2.5], [9, 4.9, -2.5], [9, 4.9, -1.5], [8, 4.9, -1.5]
-		]
-	],
+  "vertices":
+  [
+    [
+      [-3, 5, 0], [0, 5, -6], [10, 5, -6], [13, 5, 0], [10, 5, 6], [0, 5, 6],
+      [-3, -5, 0], [0, -5, -6], [10, -5, -6], [13, -5, 0], [10, -5, 6], [0, -5, 6]
+    ],
+    [
+      [8, 4.9, -2.5], [9, 4.9, -2.5], [9, 4.9, -1.5], [8, 4.9, -1.5]
+    ]
+  ],
 
-	"surfaces":
-	[
-		{
-			"type": "object",
-			"set": 0, "triangles": [[0, 4, 5], [0, 3, 4], [0, 1, 3], [1, 2, 3]]
-		},
-		{
-			"type": "object",
-			"set": 0, "triangles": [[6, 11, 10], [6, 10, 9], [6, 9, 7], [7, 9, 8]]
-		},
-		{
-			"type": "object",
-			"material": "red",
-			"set": 0, "triangles": [[0, 6, 7], [0, 7, 1]]
-		},
-		{
-			"type": "object",
-			"material": "blue",
-			"set": 0, "triangles": [[1, 7, 8], [1, 8, 2]]
-		},
-		{
-			"type": "object",
-			"material": "red",
-			"set": 0, "triangles": [[2, 9, 3], [2, 8, 9]]
-		},
-		{
-			"type": "object",
-			"material": "blue",
-			"set": 0, "triangles": [[3, 10, 4], [3, 9, 10]]
-		},
-		{
-			"type": "object",
-			"material": "red",
-			"set": 0, "triangles": [[5, 4, 10], [5, 10, 11]]
-		},
-		{
-			"type": "object",
-			"material": "blue",
-			"set": 0, "triangles": [[0, 5, 11], [0, 11, 6]]
-		},
-		{
-			"type": "objectsdaa",
-			"material": "light",
-			"set": 1, "triangles": [[0, 1, 2], [0, 2, 3]]
-		},
-		{
-			"origin": [9.25261,-3.70517,-0.58328],
-			"radius": 1.1665116,
-			"type": "sphere"
-		},
-		{
-			"origin": [7.21849, -3.4637, 0.227686],
-			"radius": 1.0375392,
-			"type": "sphere"
-		},
-		{
-			"origin": [8.7205,-3.49102,1.5892],
-			"radius": 0.9909984,
-			"type": "sphere"
-		},
-		{
-			"origin": [9.256029,-1.71069,2.54759],
-			"radius": 1.1012616,
-			"type": "sphere"
-		},
-		{
-			"origin": [7.55212,-2.93652,-1.7454],
-			"radius": 1.03188,
-			"type": "sphere"
-		},
-		{
-			"origin": [7.09813,-1.92594,1.82701],
-			"radius": 1.1845884,
-			"type": "sphere"
-		},
-		{
-			"origin": [9.06232,-1.56227,-2.54071],
-			"radius": 1.1594532,
-			"type": "sphere"
-		},
-		{
-			"origin": [10.1611,0.149198,1.6561],
-			"radius": 1.1516556,
-			"type": "sphere"
-		},
-		{
-			"origin": [6.18854,-1.62134,-0.284392],
-			"material": "transparent-2.4",
-			"radius": 1.1353848,
-			"type": "sphere"
-		},
-		{
-			"origin": [7.06462,-0.811435,-2.08262],
-			"material": "transparent-3.1",
-			"radius": 1.0242996,
-			"type": "sphere"
-		},
-		{
-			"origin": [8.169,0.0437421,2.37892],
-			"material": "transparent-1.17",
-			"radius": 0.97024919,
-			"type": "sphere"
-		},
-		{
-			"origin": [7.7036,-0.0232834,0.315095],
-			"radius": 1.1476452,
-			"material": "green",
-			"type": "sphere"
-		},
-		{
-			"origin": [10.4942,0.0102916,-1.49261],
-			"radius": 1.12010759,
-			"type": "sphere"
-		},
-		{
-			"origin": [8.4163,0.772444,-1.66188],
-			"radius": 1.10072639,
-			"type": "sphere"
-		},
-		{
-			"origin": [9.88182,1.38977,-0.0443936],
-			"radius": 0.97213679,
-			"material": "plastic",
-			"type": "sphere"
-		},
-		{
-			"origin": [9.5,-4.2,4.7],
-			"radius": 0.8,
-			"material": "mirror",
-			"type": "sphere"
-		},
-		{
-			"origin": [8, 4.40, -0.70],
-			"radius": 0.5,
-			"type": "sphere",
-			"material": "light"
-		}
-	]
+  "surfaces":
+  [
+    {
+      "type": "object",
+      "set": 0, "triangles": [[0, 4, 5], [0, 3, 4], [0, 1, 3], [1, 2, 3]]
+    },
+    {
+      "type": "object",
+      "set": 0, "triangles": [[6, 11, 10], [6, 10, 9], [6, 9, 7], [7, 9, 8]]
+    },
+    {
+      "type": "object",
+      "material": "red",
+      "set": 0, "triangles": [[0, 6, 7], [0, 7, 1]]
+    },
+    {
+      "type": "object",
+      "material": "blue",
+      "set": 0, "triangles": [[1, 7, 8], [1, 8, 2]]
+    },
+    {
+      "type": "object",
+      "material": "red",
+      "set": 0, "triangles": [[2, 9, 3], [2, 8, 9]]
+    },
+    {
+      "type": "object",
+      "material": "blue",
+      "set": 0, "triangles": [[3, 10, 4], [3, 9, 10]]
+    },
+    {
+      "type": "object",
+      "material": "red",
+      "set": 0, "triangles": [[5, 4, 10], [5, 10, 11]]
+    },
+    {
+      "type": "object",
+      "material": "blue",
+      "set": 0, "triangles": [[0, 5, 11], [0, 11, 6]]
+    },
+    {
+      "type": "object",
+      "material": "light",
+      "set": 1, "triangles": [[0, 1, 2], [0, 2, 3]]
+    },
+    {
+      "origin": [9.25261,-3.70517,-0.58328],
+      "radius": 1.1665116,
+      "type": "sphere"
+    },
+    {
+      "origin": [7.21849, -3.4637, 0.227686],
+      "radius": 1.0375392,
+      "type": "sphere"
+    },
+    {
+      "origin": [8.7205,-3.49102,1.5892],
+      "radius": 0.9909984,
+      "type": "sphere"
+    },
+    {
+      "origin": [9.256029,-1.71069,2.54759],
+      "radius": 1.1012616,
+      "type": "sphere"
+    },
+    {
+      "origin": [7.55212,-2.93652,-1.7454],
+      "radius": 1.03188,
+      "type": "sphere"
+    },
+    {
+      "origin": [7.09813,-1.92594,1.82701],
+      "radius": 1.1845884,
+      "type": "sphere"
+    },
+    {
+      "origin": [9.06232,-1.56227,-2.54071],
+      "radius": 1.1594532,
+      "type": "sphere"
+    },
+    {
+      "origin": [10.1611,0.149198,1.6561],
+      "radius": 1.1516556,
+      "type": "sphere"
+    },
+    {
+      "origin": [6.18854,-1.62134,-0.284392],
+      "material": "transparent-2.4",
+      "radius": 1.1353848,
+      "type": "sphere"
+    },
+    {
+      "origin": [7.06462,-0.811435,-2.08262],
+      "material": "transparent-3.1",
+      "radius": 1.0242996,
+      "type": "sphere"
+    },
+    {
+      "origin": [8.169,0.0437421,2.37892],
+      "material": "transparent-1.17",
+      "radius": 0.97024919,
+      "type": "sphere"
+    },
+    {
+      "origin": [7.7036,-0.0232834,0.315095],
+      "radius": 1.1476452,
+      "material": "green",
+      "type": "sphere"
+    },
+    {
+      "origin": [10.4942,0.0102916,-1.49261],
+      "radius": 1.12010759,
+      "type": "sphere"
+    },
+    {
+      "origin": [8.4163,0.772444,-1.66188],
+      "radius": 1.10072639,
+      "type": "sphere"
+    },
+    {
+      "origin": [9.88182,1.38977,-0.0443936],
+      "radius": 0.97213679,
+      "material": "plastic",
+      "type": "sphere"
+    }
+  ]
 }
