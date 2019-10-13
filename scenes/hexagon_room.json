@@ -1,8 +1,8 @@
 {
-  "sqrtspp": 8,
+  "sqrtspp": 4,
   "threads": 7,
   "naive": false,
-  "savename": "new_test_squarelight",
+  "savename": "new_test_squarelight9",
   "ior": 1.0,
   
   "cameras":
@@ -20,6 +20,14 @@
       "sensor_width": 35,
       "eye": [-1, 0, 0],
       "look_at": [13, -2.14, 0],
+      "width": 960,
+      "height": 540
+    },
+    {
+      "focal_length": 19,
+      "sensor_width": 35,
+      "eye": [-2.9, 1, 0],
+      "look_at": [13, -0.7, 0],
       "width": 960,
       "height": 540
     },
@@ -56,7 +64,7 @@
     {
       "name": "transparent-2.4",
       "transparency": 1,
-      "reflectance": [0, 0, 0],
+      "reflectance": [1, 1, 1],
       "specular_reflectance": [1, 1, 1],
       "ior": 2.4
     },
@@ -69,8 +77,8 @@
     {
       "name": "transparent-3.1",
       "transparency": 1.0,
-      "reflectance": [0, 0, 0],
-      "specular_reflectance": [0.8, 0.9, 1.0],
+      "reflectance": [1, 1, 1],
+      "specular_reflectance": [1, 1, 1],
       "ior": 2.6
     },
     {
@@ -104,7 +112,7 @@
     {
       "name": "light",
       "reflectance": [0.8, 0.8, 0.8],
-      "emittance": [450, 316, 300]
+      "emittance": [1000, 1000, 1000]
     }
   ],
 
