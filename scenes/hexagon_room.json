@@ -1,9 +1,9 @@
 {
-  "sqrtspp": 6,
+  "sqrtspp": 4,
   "threads": 7,
   "naive": false,
-  "savename": "new_test_squarelight9",
-  "ior": 1.0,
+  "savename": "new_test_squarelight14",
+  "ior": 1,
   
   "cameras":
   [
