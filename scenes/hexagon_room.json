@@ -1,8 +1,8 @@
 {
-  "sqrtspp": 16,
+  "sqrtspp": 2,
   "threads": 7,
   "naive": false,
-  "savename": "photon_map_test_12",
+  "savename": "photon_map_test_15",
   "ior": 1,
   
   "cameras":
