@@ -1,9 +1,19 @@
 {
-  "sqrtspp": 2,
-  "threads": 7,
+  "sqrtspp": 8,
+  "num_render_threads": -1,
   "naive": false,
-  "savename": "photon_map_test_15",
+  "savename": "photon_mapping",
   "ior": 1,
+
+  "photon_map":
+  {
+    "use": true,
+    "emissions": 1e8,
+    "caustic_factor": 100.0,
+    "radius": 0.1,
+    "caustic_radius": 0.1,
+    "max_photons_per_octree_leaf": 160
+  },
   
   "cameras":
   [
