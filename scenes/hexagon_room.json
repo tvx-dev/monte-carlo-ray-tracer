@@ -1,16 +1,16 @@
 {
-  "sqrtspp": 4,
+  "sqrtspp": 1,
   "num_render_threads": -1,
   "naive": false,
-  "savename": "photon_mapping_22",
+  "savename": "photon_mapping_25",
   "ior": 1,
 
   "photon_map":
   {
     "use": true,
 
-    "emissions": 2e6,
-    "caustic_factor": 50.0,
+    "emissions": 1e6,
+    "caustic_factor": 1.0,
     "radius": 0.1,
     "caustic_radius": 0.1,
     "max_photons_per_octree_leaf": 160
