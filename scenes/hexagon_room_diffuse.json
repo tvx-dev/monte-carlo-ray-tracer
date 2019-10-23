@@ -7,8 +7,6 @@
 
   "photon_map":
   {
-    "use": false,
-
     "emissions": 6e6,
     "caustic_factor": 1.0,
     "radius": 0.1,
