@@ -1,5 +1,5 @@
 {
-  "sqrtspp": 16,
+  "sqrtspp": 1,
   "num_render_threads": -1,
   "naive": false,
   "savename": "test3",
