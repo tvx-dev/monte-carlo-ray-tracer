@@ -1,17 +1,17 @@
 {
   "ior": 1.0,
-  "sqrtspp": 8,
-  "savename": "testing",
 
   "cameras":
   [
     {
       "focal_length": 300,
       "sensor_width": 35,
-      "eye": [-80, 40, 80],
-      "look_at": [0, 1, 0],
+      "eye": [ -80, 40, 80 ],
+      "look_at": [ 0, 1, 0 ],
       "width": 1920,
-      "height": 960
+      "height": 960,
+      "sqrtspp": 8,
+      "savename": "c1"
     }
   ],
 
