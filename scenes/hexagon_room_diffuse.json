@@ -27,7 +27,7 @@
   "materials": [
     {
       "name": "default",
-      "reflectance": [ 0.6, 0.6, 0.6 ]
+      "reflectance": [ 0.5, 0.5, 0.5 ]
     },
     {
       "name": "red",
