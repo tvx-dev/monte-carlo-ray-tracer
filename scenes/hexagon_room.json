@@ -1,13 +1,13 @@
 {
-  "num_render_threads": -1,
+  "num_render_threads": 3,
   "naive": false,
-  "ior": 1,
+  "ior": 1.75,
 
   "photon_map": {
     "emissions": 1e6,
-    "caustic_factor": 50.0,
-    "radius": 0.1,
-    "caustic_radius": 0.1,
+    "caustic_factor": 100.0,
+    "radius": 0.05,
+    "caustic_radius": 0.05,
     "max_photons_per_octree_leaf": 190,
     "direct_visualization": false
   },
@@ -20,8 +20,8 @@
       "look_at": [ 13, -0.6, 0 ],
       "width": 960,
       "height": 720,
-      "sqrtspp": 4,
-      "savename": "c1_vis5"
+      "sqrtspp": 2,
+      "savename": "c1_vis20"
     },
     {
       "focal_length": 24,
@@ -66,7 +66,7 @@
     },
     {
       "name": "green",
-      "ior": 1.2,
+      "ior": 1.460,
       "specular_reflectance": [ 1, 1, 1 ],
       "reflectance": [ 0.218, 1.0, 0.218 ]
     },
@@ -78,7 +78,7 @@
       "name": "crystal",
       "ior": 2.0,
       "transparency":  1.0,
-      "specular_reflectance": [ 0.0, 1.0, 0.9 ]
+      "specular_reflectance": [ 0.5, 1.0, 0.9 ]
     },
     {
       "name": "transparent-2.4",
@@ -93,20 +93,18 @@
       "ior": 1.17
     },
     {
-      "name": "transparent-2.6",
-      "transparency": 1.0,
-      "specular_reflectance": [ 1, 1, 1 ],
-      "ior": 2.6
-    },
-    {
       "name": "mirror",
       "perfect_mirror": true,
-      "reflectance": [ 1, 1, 1 ],
       "specular_reflectance": [ 1, 1, 1 ]
     },
     {
-      "name": "rough",
-      "reflectance": [ 0.5, 0.9, 1.0 ],
+      "name": "rough-blue",
+      "reflectance": [ 0.4, 0.85, 1.0 ],
+      "roughness": 10.0
+    },
+    {
+      "name": "rough-red",
+      "reflectance": [ 1.0, 0.4, 0.4 ],
       "roughness": 10.0
     },
     {
@@ -260,7 +258,7 @@
     {
       "origin": [ 7.21849, -3.4637, 0.227686 ],
       "radius": 1.02716,
-      "material":  "rough",
+      "material":  "rough-blue",
       "type": "sphere"
     },
     {
@@ -276,6 +274,7 @@
     {
       "origin": [ 7.55212, -2.93652, -1.7454 ],
       "radius": 1.02156,
+      "material": "rough-red",
       "type": "sphere"
     },
     {
@@ -301,7 +300,7 @@
     },
     {
       "origin": [ 7.06462, -0.811435, -2.08262 ],
-      "material": "transparent-2.6",
+      "material": "transparent-2.4",
       "radius": 1.01406,
       "type": "sphere"
     },
