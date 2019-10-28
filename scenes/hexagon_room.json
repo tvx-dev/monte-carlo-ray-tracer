@@ -1,13 +1,13 @@
 {
-  "num_render_threads": 3,
+  "num_render_threads": -1,
   "naive": false,
-  "ior": 1.75,
+  "ior": 1,
 
   "photon_map": {
     "emissions": 1e6,
-    "caustic_factor": 100.0,
-    "radius": 0.05,
-    "caustic_radius": 0.05,
+    "caustic_factor": 25.0,
+    "radius": 0.1,
+    "caustic_radius": 0.1,
     "max_photons_per_octree_leaf": 190,
     "direct_visualization": false
   },
@@ -17,11 +17,11 @@
       "focal_length": 23,
       "sensor_width": 35,
       "eye": [ -2, 0, 0 ],
-      "look_at": [ 13, -0.6, 0 ],
+      "look_at": [ 13, -0.55, 0 ],
       "width": 960,
       "height": 720,
-      "sqrtspp": 2,
-      "savename": "c1_vis20"
+      "sqrtspp": 8,
+      "savename": "c1_vis27"
     },
     {
       "focal_length": 24,
