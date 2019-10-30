@@ -1,27 +1,27 @@
 {
   "num_render_threads": -1,
-  "naive": false,
+  "naive": true,
   "ior": 1,
 
   "photon_map": {
-    "emissions": 6e6,
+    "emissions": 1e6,
     "caustic_factor": 1.0,
     "radius": 0.1,
     "caustic_radius": 0.1,
-    "max_photons_per_octree_leaf": 160,
+    "max_photons_per_octree_leaf": 190,
     "direct_visualization": false
   },
 
   "cameras": [
     {
-      "focal_length": 21,
+      "focal_length": 36,
       "sensor_width": 35,
-      "eye": [ -2, 0, 0 ],
-      "look_at": [ 13, -0.5, 0 ],
-      "width": 960,
-      "height": 540,
-      "sqrtspp": 4,
-      "savename": "c1"
+      "eye": [ -2.9, 0, 0 ],
+      "look_at": [ 13, -0.75, 0 ],
+      "width": 512,
+      "height": 512,
+      "sqrtspp": 8,
+      "savename": "c1_diffuse_naive"
     }
   ],
 
@@ -41,6 +41,16 @@
     {
       "name": "blue",
       "reflectance": [ 0.218, 0.759, 1.0 ]
+    },
+    {
+      "name": "rough-blue",
+      "reflectance": [ 0.4, 0.85, 1.0 ],
+      "roughness": 10.0
+    },
+    {
+      "name": "rough-red",
+      "reflectance": [ 1.0, 0.4, 0.4 ],
+      "roughness": 10.0
     },
     {
       "name": "light",
@@ -63,12 +73,6 @@
       [ 13, -5, 0 ],
       [ 10, -5, 6 ],
       [ 0, -5, 6 ]
-    ],
-    [
-      [ 8, 4.9, -2.5 ],
-      [ 9, 4.9, -2.5 ],
-      [ 9, 4.9, -1.5 ],
-      [ 8, 4.9, -1.5 ]
     ],
     [
       [ 8.28362, -5.0, -4.78046 ],
@@ -156,7 +160,7 @@
     },
     {
       "type": "object",
-      "set": 2,
+      "set": 1,
       "triangles": [
         [ 0, 2, 1 ],
         [ 0, 3, 2 ],
@@ -167,13 +171,10 @@
       ]
     },
     {
-      "type": "object",
+      "origin": [ 8.5, 3, 0 ],
+      "radius": 0.25,
       "material": "light",
-      "set": 1,
-      "triangles": [
-        [ 0, 1, 2 ],
-        [ 0, 2, 3 ]
-      ]
+      "type": "sphere"
     },
     {
       "origin": [ 9.25261, -3.70517, -0.58328 ],
@@ -183,6 +184,7 @@
     {
       "origin": [ 7.21849, -3.4637, 0.227686 ],
       "radius": 1.02716,
+      "material": "rough-blue",
       "type": "sphere"
     },
     {
@@ -198,6 +200,7 @@
     {
       "origin": [ 7.55212, -2.93652, -1.7454 ],
       "radius": 1.02156,
+      "material": "rough-red",
       "type": "sphere"
     },
     {
@@ -249,6 +252,11 @@
     {
       "origin": [ 9.88182, 1.38977, -0.0443936 ],
       "radius": 0.962415,
+      "type": "sphere"
+    },
+    {
+      "origin": [ 9.5, -4.2, 4.7 ],
+      "radius": 0.8,
       "type": "sphere"
     }
   ]
