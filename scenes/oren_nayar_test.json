@@ -1,5 +1,6 @@
 {
-  "threads":  -1,
+  "num_render_threads": -1,
+  "naive": false,
   "ior": 1.0,
 
   "cameras": [
@@ -18,66 +19,48 @@
   "materials": [
     {
       "name": "default",
-      "specular": false,
       "roughness": 0.0,
-      "reflectance": [ 0.8, 0.8, 0.8 ],
-      "emittance": [ 0, 0, 0 ]
+      "reflectance": [ 0.8, 0.8, 0.8 ]
     },
     {
       "name": "gray_0.0",
-      "specular": false,
       "roughness": 0,
-      "reflectance": [ 0.8, 0.8, 0.8 ],
-      "emittance": [ 0, 0, 0 ]
+      "reflectance": [ 0.8, 0.8, 0.8 ]
     },
     {
       "name": "gray_0.25",
-      "specular": false,
       "roughness": 0.25,
-      "reflectance": [ 0.8, 0.8, 0.8 ],
-      "emittance": [ 0, 0, 0 ]
+      "reflectance": [ 0.8, 0.8, 0.8 ]
     },
     {
       "name": "gray_0.5",
-      "specular": false,
       "roughness": 0.5,
-      "reflectance": [ 0.8, 0.8, 0.8 ],
-      "emittance": [ 0, 0, 0 ]
+      "reflectance": [ 0.8, 0.8, 0.8 ]
     },
     {
       "name": "gray_1.0",
-      "specular": false,
       "roughness": 1.0,
-      "reflectance": [ 0.8, 0.8, 0.8 ],
-      "emittance": [ 0, 0, 0 ]
+      "reflectance": [ 0.8, 0.8, 0.8 ]
     },
     {
       "name": "gray_2.0",
-      "specular": false,
       "roughness": 2.0,
-      "reflectance": [ 0.8, 0.8, 0.8 ],
-      "emittance": [ 0, 0, 0 ]
+      "reflectance": [ 0.8, 0.8, 0.8 ]
     },
     {
       "name": "gray_4.0",
-      "specular": false,
       "roughness": 4.0,
-      "reflectance": [ 0.8, 0.8, 0.8 ],
-      "emittance": [ 0, 0, 0 ]
+      "reflectance": [ 0.8, 0.8, 0.8 ]
     },
     {
       "name": "gray_8.0",
-      "specular": false,
       "roughness": 8.0,
-      "reflectance": [ 0.8, 0.8, 0.8 ],
-      "emittance": [ 0, 0, 0 ]
+      "reflectance": [ 0.8, 0.8, 0.8 ]
     },
     {
       "name": "gray_16.0",
-      "specular": false,
       "roughness": 16.0,
-      "reflectance": [ 0.8, 0.8, 0.8 ],
-      "emittance": [ 0, 0, 0 ]
+      "reflectance": [ 0.8, 0.8, 0.8 ]
     }
   ],
 
@@ -88,7 +71,6 @@
       [ 16, 0, -1 ],
       [ -16, 0, -1 ]
     ]
-
   ],
 
   "surfaces": [

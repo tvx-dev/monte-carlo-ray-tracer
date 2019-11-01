@@ -1,6 +1,6 @@
 {
   "num_render_threads": -1,
-  "naive": true,
+  "naive": false,
   "ior": 1,
 
   "photon_map": {
