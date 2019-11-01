@@ -5,7 +5,7 @@
 
   "photon_map": {
     "emissions": 1e6,
-    "caustic_factor": 25.0,
+    "caustic_factor": 100.0,
     "radius": 0.1,
     "caustic_radius": 0.1,
     "max_photons_per_octree_leaf": 190,
@@ -18,10 +18,10 @@
       "sensor_width": 35,
       "eye": [ -2, 0, 0 ],
       "look_at": [ 13, -0.55, 0 ],
-      "width": 960,
-      "height": 720,
+      "width": 1280,
+      "height": 960,
       "sqrtspp": 2,
-      "savename": "c1_vis28"
+      "savename": "c1"
     },
     {
       "focal_length": 24,
