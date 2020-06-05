@@ -10,6 +10,7 @@
       "eye": [ -80, 40, 80 ],
       "look_at": [ 0, 1, 0 ],
       "f_stop": -0.1,
+      "image": { "width": 1920, "height": 960 },
       "width": 1920,
       "height": 960,
       "sqrtspp": 4,
@@ -17,67 +18,58 @@
     }
   ],
 
-  "materials": [
-    {
-      "name": "default",
+  "materials": {
+    "default": {
       "roughness": 0.0,
       "reflectance": [ 0.8, 0.8, 0.8 ]
     },
-    {
-      "name": "gray_0.0",
+    "gray_0.0": {
       "roughness": 0,
       "reflectance": [ 0.8, 0.8, 0.8 ]
     },
-    {
-      "name": "gray_0.25",
+    "gray_0.25": {
       "roughness": 0.25,
       "reflectance": [ 0.8, 0.8, 0.8 ]
     },
-    {
-      "name": "gray_0.5",
+    "gray_0.5": {
       "roughness": 0.5,
       "reflectance": [ 0.8, 0.8, 0.8 ]
     },
-    {
-      "name": "gray_1.0",
+    "gray_1.0": {
       "roughness": 1.0,
       "reflectance": [ 0.8, 0.8, 0.8 ]
     },
-    {
-      "name": "gray_2.0",
+    "gray_2.0": {
       "roughness": 2.0,
       "reflectance": [ 0.8, 0.8, 0.8 ]
     },
-    {
-      "name": "gray_4.0",
+    "gray_4.0": {
       "roughness": 4.0,
       "reflectance": [ 0.8, 0.8, 0.8 ]
     },
-    {
-      "name": "gray_8.0",
+    "gray_8.0": {
       "roughness": 8.0,
       "reflectance": [ 0.8, 0.8, 0.8 ]
     },
-    {
-      "name": "gray_16.0",
+    "gray_16.0": {
       "roughness": 16.0,
       "reflectance": [ 0.8, 0.8, 0.8 ]
     }
-  ],
+  },
 
-  "vertices": [
-    [
+  "vertices": {
+    "floor": [
       [ -16, 0, 1 ],
       [ 16, 0, 1 ],
       [ 16, 0, -1 ],
       [ -16, 0, -1 ]
     ]
-  ],
+  },
 
   "surfaces": [
     {
       "type": "object",
-      "set": 0,
+      "vertex_set": "floor",
       "triangles": [
         [ 0, 2, 3 ],
         [ 0, 1, 2 ]

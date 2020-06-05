@@ -18,49 +18,41 @@
       "sensor_width": 35,
       "eye": [ -2.9, 0, 0 ],
       "look_at": [ 13, -0.75, 0 ],
-      "width": 512,
-      "height": 512,
+      "image":  { "width": 512, "height": 512 },
       "sqrtspp": 8,
       "savename": "c1_diffuse_naive"
     }
   ],
 
-  "materials": [
-    {
-      "name": "default",
+  "materials": {
+    "default": {
       "reflectance": [ 0.5, 0.5, 0.5 ]
     },
-    {
-      "name": "red",
+    "red": {
       "reflectance": [ 1.0, 0.218, 0.218 ]
     },
-    {
-      "name": "green",
+    "green": {
       "reflectance": [ 0.218, 1.0, 0.218 ]
     },
-    {
-      "name": "blue",
+    "blue": {
       "reflectance": [ 0.218, 0.759, 1.0 ]
     },
-    {
-      "name": "rough-blue",
+    "rough-blue": {
       "reflectance": [ 0.4, 0.85, 1.0 ],
       "roughness": 10.0
     },
-    {
-      "name": "rough-red",
+    "rough-red": {
       "reflectance": [ 1.0, 0.4, 0.4 ],
       "roughness": 10.0
     },
-    {
-      "name": "light",
+    "light": {
       "reflectance": [ 0.8, 0.8, 0.8 ],
       "emittance": [ 1000, 1000, 1000 ]
     }
-  ],
+  },
 
-  "vertices": [
-    [
+  "vertices": {
+    "room": [
       [ -3, 5, 0 ],
       [ 0, 5, -6 ],
       [ 10, 5, -6 ],
@@ -74,19 +66,19 @@
       [ 10, -5, 6 ],
       [ 0, -5, 6 ]
     ],
-    [
+    "crystal": [
       [ 8.28362, -5.0, -4.78046 ],
       [ 6.47867, -0.90516, -3.67389 ],
       [ 7.97071, -0.85108, -2.79588 ],
       [ 7.93553, -0.41379, -4.47145 ],
       [ 6.63966, 3.55331, -2.51368 ]
     ]
-  ],
+  },
 
   "surfaces": [
     {
       "type": "object",
-      "set": 0,
+      "vertex_set": "room",
       "triangles": [
         [ 0, 4, 5 ],
         [ 0, 3, 4 ],
@@ -96,7 +88,7 @@
     },
     {
       "type": "object",
-      "set": 0,
+      "vertex_set": "room",
       "triangles": [
         [ 6, 11, 10 ],
         [ 6, 10, 9 ],
@@ -107,7 +99,7 @@
     {
       "type": "object",
       "material": "red",
-      "set": 0,
+      "vertex_set": "room",
       "triangles": [
         [ 0, 6, 7 ],
         [ 0, 7, 1 ]
@@ -116,7 +108,7 @@
     {
       "type": "object",
       "material": "blue",
-      "set": 0,
+      "vertex_set": "room",
       "triangles": [
         [ 1, 7, 8 ],
         [ 1, 8, 2 ]
@@ -125,7 +117,7 @@
     {
       "type": "object",
       "material": "red",
-      "set": 0,
+      "vertex_set": "room",
       "triangles": [
         [ 2, 9, 3 ],
         [ 2, 8, 9 ]
@@ -134,7 +126,7 @@
     {
       "type": "object",
       "material": "blue",
-      "set": 0,
+      "vertex_set": "room",
       "triangles": [
         [ 3, 10, 4 ],
         [ 3, 9, 10 ]
@@ -143,7 +135,7 @@
     {
       "type": "object",
       "material": "red",
-      "set": 0,
+      "vertex_set": "room",
       "triangles": [
         [ 5, 4, 10 ],
         [ 5, 10, 11 ]
@@ -152,7 +144,7 @@
     {
       "type": "object",
       "material": "blue",
-      "set": 0,
+      "vertex_set": "room",
       "triangles": [
         [ 0, 5, 11 ],
         [ 0, 11, 6 ]
@@ -160,7 +152,7 @@
     },
     {
       "type": "object",
-      "set": 1,
+      "vertex_set": "crystal",
       "triangles": [
         [ 0, 2, 1 ],
         [ 0, 3, 2 ],
