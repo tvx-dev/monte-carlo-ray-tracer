@@ -20,7 +20,12 @@
       "look_at": [ 13, -0.55, 0 ],
       "f_stop": 1.8,
       "focus_distance": 8.6,
-      "image" : { "width": 960, "height": 720 },
+      "image" : { 
+        "width": 960, 
+        "height": 720,
+        "pre_exposure_compensation": -1,
+        "post_exposure_compensation": -0.5
+      },
       "sqrtspp": 2,
       "savename": "c1b"
     },
@@ -236,7 +241,7 @@
     {
       "origin": [ 7.21849, -3.4637, 0.227686 ],
       "radius": 1.02716,
-      "material":  "rough-blue",
+      "material": "rough-blue",
       "type": "sphere"
     },
     {
