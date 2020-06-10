@@ -21,10 +21,8 @@
       "f_stop": 1.8,
       "focus_distance": 8.6,
       "image" : { 
-        "width": 960, 
-        "height": 720,
-        "pre_exposure_compensation": -1,
-        "post_exposure_compensation": -0.5
+        "width": 960,
+        "height": 720
       },
       "sqrtspp": 2,
       "savename": "c1b"
@@ -60,18 +58,18 @@
 
   "materials": {
     "default": {
-      "reflectance": [ 0.5, 0.5, 0.5 ]
+      "reflectance": [ 0.73, 0.73, 0.73 ]
     },
     "red": {
-      "reflectance": [ 1.0, 0.218, 0.218 ]
+      "reflectance": [ 1.0, 0.5, 0.5 ]
     },
     "green": {
       "ior": 1.460,
       "specular_reflectance": [ 1, 1, 1 ],
-      "reflectance": [ 0.218, 1.0, 0.218 ]
+      "reflectance": [ 0.5, 1.0, 0.5 ]
     },
     "blue": {
-      "reflectance": [ 0.218, 0.759, 1.0 ]
+      "reflectance": [ 0.5, 0.882, 1.0 ]
     },
     "crystal": {
       "ior": 2.0,
@@ -93,15 +91,15 @@
       "specular_reflectance": [ 1, 1, 1 ]
     },
     "rough-blue": {
-      "reflectance": [ 0.4, 0.85, 1.0 ],
+      "reflectance": [ 0.66, 0.929, 1.0 ],
       "roughness": 10.0
     },
     "rough-red": {
-      "reflectance": [ 1.0, 0.4, 0.4 ],
+      "reflectance": [ 1.0, 0.66, 0.66 ],
       "roughness": 10.0
     },
     "light": {
-      "reflectance": [ 0.8, 0.8, 0.8 ],
+      "reflectance": [ 0.9, 0.9, 0.9 ],
       "emittance": [ 1000, 1000, 1000 ]
     }
   },
