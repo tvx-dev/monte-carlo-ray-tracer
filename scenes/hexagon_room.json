@@ -16,7 +16,7 @@
     {
       "focal_length": 23,
       "sensor_width": 35,
-      "eye": [ -2, 0, 0 ],
+      "eye": [ -20, 0, 0 ],
       "look_at": [ 13, -0.55, 0 ],
       "f_stop": 1.8,
       "focus_distance": 8.6,
@@ -24,7 +24,7 @@
         "width": 960,
         "height": 720
       },
-      "sqrtspp": 2,
+      "sqrtspp": 8,
       "savename": "c1b"
     },
     {
