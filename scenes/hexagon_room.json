@@ -16,7 +16,7 @@
     {
       "focal_length": 23,
       "sensor_width": 35,
-      "eye": [ -20, 0, 0 ],
+      "eye": [ -2, 0, 0 ],
       "look_at": [ 13, -0.55, 0 ],
       "f_stop": 1.8,
       "focus_distance": 8.6,
