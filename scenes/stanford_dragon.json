@@ -19,7 +19,7 @@
 
   "bvh": {
     "type": "quaternary_sah",
-    "bins_per_axis": 8
+    "bins_per_axis": 16
   },
 
   "vertices": {
