@@ -4,10 +4,10 @@
   "ior": 1.0,
 
   "photon_map": {
-    "emissions": 1e6,
-    "caustic_factor": 1.0,
+    "emissions": 2e6,
+    "caustic_factor": 25.0,
     "radius": 0.1,
-    "caustic_radius": 0.1,
+    "caustic_radius": 0.05,
     "max_photons_per_octree_leaf": 190,
     "direct_visualization": false
   },
