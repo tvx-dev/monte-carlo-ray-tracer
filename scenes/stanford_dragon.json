@@ -86,7 +86,7 @@
     {
       "type": "object",
       "material": "dragon",
-      "file": "stanford_dragon_fullres.obj"
+      "file": "data/stanford_dragon_fullres.obj"
     }
   ]
 }
