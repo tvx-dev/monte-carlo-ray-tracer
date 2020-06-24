@@ -10,6 +10,7 @@
     "max_radius": 0.1,
     "max_caustic_radius": 0.05,
     "max_photons_per_octree_leaf": 200,
+    "use_shadow_photons": false,
     "direct_visualization": false
   },
 
