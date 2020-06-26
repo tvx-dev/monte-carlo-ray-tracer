@@ -10,8 +10,8 @@
       "eye": [ -0.5, 0.6, -2 ],
       "look_at": [ 0, 0.145, 0.125 ],
       "f_stop": 1.8,
-      "image" : { "width": 960, "height": 720 },
-      "sqrtspp": 4,
+      "image" : { "width": 960, "height": 720, "tonemapper": "Hable", "exposure_compensation": -1 },
+      "sqrtspp": 16,
       "savename": "quadric"
     }
   ],
@@ -61,17 +61,9 @@
   "surfaces": [
     {
       "type": "quadric",
-      "material": "blue",
-      "YY": 1, "Z": 0.15,
-      "bound_dimensions": [0.59, 11, 11],
-      "origin": [-1.2, 0.32, 5],
-      "orientation": { "axis":[1,0,0], "angle": 4.5 }
-    },
-    {
-      "type": "quadric",
       "material": "red",
       "YY": 1, "Z": 0.15,
-      "bound_dimensions": [0.59, 11, 11],
+      "bound_dimensions": [0.592, 11, 11],
       "origin": [-0.6, 0.32, 5],
       "orientation": { "axis":[1,0,0], "angle": 4.5 }
     },
@@ -79,7 +71,7 @@
       "type": "quadric",
       "material": "blue",
       "YY": 1, "Z": 0.15,
-      "bound_dimensions": [0.59, 11, 11],
+      "bound_dimensions": [0.592, 12, 12],
       "origin": [0, 0.32, 5],
       "orientation": { "axis":[1,0,0], "angle": 4.5 }
     },
@@ -87,7 +79,7 @@
       "type": "quadric",
       "material": "red",
       "YY": 1, "Z": 0.15,
-      "bound_dimensions": [0.59, 11, 11],
+      "bound_dimensions": [0.592, 13, 13],
       "origin": [0.6, 0.32, 5],
       "orientation": { "axis":[1,0,0], "angle": 4.5 }
     },
@@ -95,7 +87,7 @@
       "type": "quadric",
       "material": "blue",
       "YY": 1, "Z": 0.15,
-      "bound_dimensions": [0.59, 11, 11],
+      "bound_dimensions": [0.592, 14, 14],
       "origin": [1.2, 0.32, 5],
       "orientation": { "axis":[1,0,0], "angle": 4.5 }
     },
@@ -103,7 +95,7 @@
       "type": "quadric",
       "material": "red",
       "YY": 1, "Z": 0.15,
-      "bound_dimensions": [0.59, 11, 11],
+      "bound_dimensions": [0.592, 15, 15],
       "origin": [1.8, 0.32, 5],
       "orientation": { "axis":[1,0,0], "angle": 4.5 }
     },
@@ -111,7 +103,7 @@
       "type": "quadric",
       "material": "blue",
       "YY": 1, "Z": 0.15,
-      "bound_dimensions": [0.59, 11, 11],
+      "bound_dimensions": [0.592, 16, 16],
       "origin": [2.4, 0.32, 5],
       "orientation": { "axis":[1,0,0], "angle": 4.5 }
     },
@@ -119,18 +111,11 @@
       "type": "quadric",
       "material": "red",
       "YY": 1, "Z": 0.15,
-      "bound_dimensions": [0.59, 11, 11],
+      "bound_dimensions": [0.592, 17, 17],
       "origin": [3.0, 0.32, 5],
       "orientation": { "axis":[1,0,0], "angle": 4.5 }
     },
-    {
-      "type": "quadric",
-      "material": "blue",
-      "YY": 1, "Z": 0.15,
-      "bound_dimensions": [0.59, 11, 11],
-      "origin": [3.6, 0.32, 5],
-      "orientation": { "axis":[1,0,0], "angle": 4.5 }
-    },
+
 
     {
       "type": "quadric",

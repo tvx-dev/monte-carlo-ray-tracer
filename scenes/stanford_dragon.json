@@ -11,15 +11,15 @@
       "f_stop": 0.4,
       "focus_distance": 16.30,
       "look_at": [ 8, -1.7, -0.4 ],
-      "image":  { "width": 960, "height": 720, "exposure_compensation": -3, "gain_compensation": -0.4 },
-      "sqrtspp": 4,
+      "image":  { "width": 3840, "height": 2880, "exposure_compensation": -2.5, "gain_compensation": -0.3, "tonemapper": "ACES" },
+      "sqrtspp": 42,
       "savename": "stanford_dragon"
     }
   ],
 
   "bvh": {
     "type": "quaternary_sah",
-    "bins_per_axis": 8
+    "bins_per_axis": 16
   },
 
   "vertices": {
@@ -86,6 +86,7 @@
     {
       "type": "object",
       "material": "dragon",
+      "smooth":  true,
       "file": "data/stanford_dragon_fullres.obj"
     }
   ]
