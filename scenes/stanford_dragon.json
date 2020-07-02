@@ -5,49 +5,50 @@
 
   "cameras": [
     {
-      "focal_length": 50,
+      "focal_length": 42,
       "sensor_width": 35,
-      "eye": [ -12, 0, 2 ],
+      "eye": [ -12, -0.05, 2 ],
       "f_stop": 0.4,
       "focus_distance": 16.30,
-      "look_at": [ 8, -1.7, -0.4 ],
-      "image":  { "width": 3840, "height": 2880, "exposure_compensation": -2.5, "gain_compensation": -0.3, "tonemapper": "ACES" },
-      "sqrtspp": 42,
-      "savename": "stanford_dragon"
+      "look_at": [ 8, -1.9, -0.4 ],
+      "image":  { "width": 1280, "height": 720, "exposure_compensation": -2, "gain_compensation": 0.0, "tonemapper": "ACES" },
+      "sqrtspp": 4,
+      "savename": "stanford_dragon_frosted"
     }
   ],
 
   "bvh": {
-    "type": "quaternary_sah",
+    "type": "octree",
     "bins_per_axis": 16
   },
 
   "vertices": {
     "room": [
-      [-2.04543876647949,  -5, -5.90267705917358],
-      [-2.04543876647949, 2.5, -5.90267705917358],
-      [11.25910472869873,  -5, -7.49927568435669],
-      [11.25910472869873, 2.5, -7.49927568435669],
-      [-0.44884020090103,  -5, 7.40186643600464],
-      [-0.44884020090103, 2.5, 7.40186643600464],
-      [12.85570335388184,  -5, 5.80526781082153],
-      [12.85570335388184, 2.5, 5.80526781082153]
+      [-2.04543876647949,  -4.98, -5.90267705917358],
+      [-2.04543876647949,   5, -5.90267705917358],
+      [11.25910472869873,  -4.98, -7.49927568435669],
+      [11.25910472869873,   5, -7.49927568435669],
+      [-0.44884020090103,  -4.98, 7.40186643600464],
+      [-0.44884020090103,   5, 7.40186643600464],
+      [12.85570335388184,  -4.98, 5.80526781082153],
+      [12.85570335388184,   5, 5.80526781082153]
     ]
   },
 
   "materials": {
     "default": {
-      "reflectance": [0.9, 0.9, 0.9]
+      "reflectance": "#222222",
+      "specular_reflectance": [1.0, 0.95, 0.9],
+      "ior": 2.0,
+      "specular_roughness": 0.1
     },
-    "left_wall": {
-      "reflectance": "#A8C686"
-    },
-    "right_wall": {
-      "reflectance": "#8EABBF"
+    "floor": {
+      "reflectance": [0.8,0.75,0.7]
     },
     "dragon": {
-      "reflectance": "#EE964B",
-      "specular_reflectance": [0.5, 0.5, 0.5],
+      "specular_reflectance": "#ace6d6",
+      "specular_roughness": 0.25,
+      "transparency": 1.0,
       "ior": 1.5
     }
   },
@@ -56,31 +57,22 @@
     {
       "type": "object",
       "vertex_set": "room",
-      "material": "left_wall",
-      "triangles": [
-        [0, 1, 2],
-        [1, 3, 2]
-      ]
-    },
-    {
-      "type": "object",
-      "vertex_set": "room",
-      "material": "right_wall",
-      "triangles": [
-        [6, 7, 4],
-        [7, 5, 4]
-      ]
-    },
-    {
-      "type": "object",
-      "vertex_set": "room",
+      "material": "floor",
       "triangles": [
         [4, 0, 2],
-        [2, 3, 6],
-        [3, 7, 6],
-        [5, 7, 1],
-        [7, 3, 1],
         [6, 4, 2]
+      ]
+    },
+    {
+      "type": "object",
+      "vertex_set": "room",
+      "triangles": [
+        [6, 7, 4],
+        [7, 5, 4],
+        [0, 1, 2],
+        [1, 3, 2],
+        [2, 3, 6],
+        [3, 7, 6]
       ]
     },
     {
