@@ -21,7 +21,7 @@
       "eye": [ -2.9, 0, 0 ],
       "look_at": [ 13, -0.75, 0 ],
       "image":  { "width": 512, "height": 512 },
-      "sqrtspp": 8,
+      "sqrtspp": 4,
       "savename": "c1_diffuse_naive"
     }
   ],

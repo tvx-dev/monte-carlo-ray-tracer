@@ -1,0 +1,156 @@
+{
+  "num_render_threads": -1,
+  "naive": false,
+  "ior": 1.0,
+
+  "cameras": [
+    {
+      "focal_length": 550,
+      "sensor_width": 35,
+      "eye": [ 0, 75, 255 ],
+      "look_at": [ 0, 1, 0 ],
+      "image": { "width": 1280, "height": 240, "tonemapper": "ACES" },
+      "sqrtspp": 4,
+      "savename": "metals"
+    }
+  ],
+
+  "materials": {
+    "default": {
+      "reflectance": 1.0
+    },
+    "light": {     
+      "emittance": [110340, 106240, 87830]
+    },
+    "gold": {
+      "specular_roughness": 0.03,
+      "ior": {
+        "real": [0.03344755, 0.36314684, 1.61295201],
+        "imaginary": [3.90181846, 2.43300728, 1.79303367]
+      }
+    },
+    "silver": {
+      "specular_roughness": 0.06,
+      "ior": {
+        "real": [0.03122206, 0.02993163, 0.03752037],
+        "imaginary": [4.52084303, 3.61703254, 2.59526494]
+      }
+    },
+    "copper": {
+      "specular_roughness": 0.1,
+      "ior": {
+        "real": [-0.16968940, 0.79400849, 1.10737582],
+        "imaginary": [3.53627871, 2.59968455, 2.37851486]
+      }
+    },
+    "iron": {
+      "specular_roughness": 0.08,
+      "ior": {
+        "real": [2.91679227, 2.92517616, 2.53774810],
+        "imaginary": [3.08474983, 2.93861411, 2.74620057]
+      }
+    },
+    "aluminium": {
+      "specular_roughness": 0.06,
+      "ior": {
+        "real": [0.87871434, 0.57420240, 0.36687140],
+        "imaginary": [6.20761074, 5.22266829, 4.18800217]
+      }
+    },
+    "mercury": {
+      "specular_roughness": 0.04,
+      "ior": {
+        "real": [2.05366659, 1.52200127, 1.00620342],
+        "imaginary": [5.34268034, 4.61647622, 3.77608332]
+      }
+    },
+    "nickel": {
+      "specular_roughness": 0.09,
+      "ior": {
+        "real": [2.02840832, 1.90465356, 1.72136251],
+        "imaginary": [4.20416428, 3.57426042, 2.87298213]
+      }
+    },
+    "palladium": {
+      "specular_roughness": 0.065,
+      "ior": {
+        "real": [1.79598558, 1.62313143, 1.38800161],
+        "imaginary": [4.37307307, 3.81575961, 3.19347675]
+      }
+    }
+  },
+
+  "vertices": {
+    "floor": [
+      [ -160, 0, 160 ],
+      [ 160, 0, 160 ],
+      [ 160, 0, -160 ],
+      [ -160, 0, -160 ]
+    ]
+  },
+
+  "surfaces": [
+    {
+      "type": "object",
+      "vertex_set": "floor",
+      "triangles": [
+        [ 0, 2, 3 ],
+        [ 0, 1, 2 ]
+      ]
+    },
+    {
+      "type": "sphere",
+      "radius": 1,
+      "origin": [ -7.105, 1, 0 ],
+      "material": "gold"
+    },
+    {
+      "type": "sphere",
+      "radius": 1,
+      "origin": [ -5.075, 1, 0 ],
+      "material": "silver"
+    },
+    {
+      "type": "sphere",
+      "radius": 1,
+      "origin": [ -3.045, 1, 0 ],
+      "material": "copper"
+    },
+    {
+      "type": "sphere",
+      "radius": 1,
+      "origin": [ -1.015, 1, 0 ],
+      "material": "iron"
+    },
+    {
+      "type": "sphere",
+      "radius": 1,
+      "origin": [ 1.015, 1, 0 ],
+      "material": "aluminium"
+    },
+    {
+      "type": "sphere",
+      "radius": 1,
+      "origin": [ 3.045, 1, 0 ],
+      "material": "mercury"
+    },
+    {
+      "type": "sphere",
+      "radius": 1,
+      "origin": [ 5.075, 1, 0 ],
+      "material": "nickel"
+    },
+    {
+      "type": "sphere",
+      "radius": 1,
+      "origin": [ 7.105, 1, 0 ],
+      "material": "palladium"
+    },
+    {
+      "type": "sphere",
+      "radius": 1,
+      "origin": [ 0, 50, 20 ],
+      "material": "light"
+    }
+  ]
+}

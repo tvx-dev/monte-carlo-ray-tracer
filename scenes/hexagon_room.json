@@ -76,7 +76,8 @@
     "crystal": {
       "ior": 2.0,
       "transparency":  1.0,
-      "specular_reflectance": [ 0.5, 1.0, 0.9 ]
+      "specular_reflectance": [ 1.0, 1.0, 1.0 ],
+      "transmittance": [ 0.5, 1.0, 0.9 ]
     },
     "transparent-2.4": {
       "transparency": 1,

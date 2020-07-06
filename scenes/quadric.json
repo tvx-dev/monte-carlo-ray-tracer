@@ -121,7 +121,7 @@
       "type": "quadric",
       "material": "two_sheet_hyperboloid",
       "XX": 1, "YY": -1, "ZZ": 1, "R": 0.2,
-      "bound_size": 0.2,
+      "bound_dimensions": 0.2,
       "origin": [0.0, 0.3, 0.125],
       "scale": 0.025
     },
@@ -129,7 +129,7 @@
       "type": "quadric",
       "material": "cylinder",
       "XX": 1, "ZZ": 1, "R": -1,
-      "bound_size": 0.25,
+      "bound_dimensions": 0.25,
       "origin": [0.3, 0, 0.125],
       "scale": 0.124
     },
@@ -145,7 +145,7 @@
       "type": "quadric",
       "material": "hyperbolic_paraboloid",
       "XX": 0.5, "Y": -1, "ZZ": -0.5,
-      "bound_size": 0.2,
+      "bound_dimensions": 0.2,
       "origin": [-0.3, 0.3, 0.125],
       "scale": 0.02
     },
@@ -153,7 +153,7 @@
       "type": "quadric",
       "material": "ellipsoid",
       "XX": 0.7, "YY": 1.5, "ZZ": 1.5, "R": -1,
-      "bound_size": 0.25,
+      "bound_dimensions": 0.25,
       "origin": [0.0, -0.05, 0.125],
       "scale": 0.1
     },
