@@ -103,7 +103,7 @@
     },
     "light": {
       "reflectance": [ 0.9, 0.9, 0.9 ],
-      "emittance": [ 1000, 1000, 1000 ]
+      "emittance": { "illuminant": "D55", "scale": 1000 }
     }
   },
 
