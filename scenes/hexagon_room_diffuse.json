@@ -21,7 +21,7 @@
       "eye": [ -2.9, 0, 0 ],
       "look_at": [ 13, -0.75, 0 ],
       "image":  { "width": 512, "height": 512 },
-      "sqrtspp": 4,
+      "sqrtspp": 3,
       "savename": "c1_diffuse_naive"
     }
   ],
@@ -49,7 +49,7 @@
     },
     "light": {
       "reflectance": [ 0.9, 0.9, 0.9 ],
-      "emittance": [ 1000, 1000, 1000 ]
+      "emittance": [ 100, 100, 100 ]
     }
   },
 
