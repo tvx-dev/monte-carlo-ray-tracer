@@ -1,7 +1,6 @@
 {
   "num_render_threads": -1,
-  "naive": false,
-  "ior": 1,
+  "ior": 1.0,
 
   "cameras": [
     {
@@ -17,7 +16,7 @@
 
   "bvh": {
     "type": "octree",
-    "bins_per_axis": 16
+    "bins_per_axis": 32
   },
 
   "vertices": {
@@ -36,21 +35,27 @@
   "materials": {
     "default": {
       "specular_roughness": 0.05,
-      "specular_reflectance": 0.333,
-      "ior": {
-        "real": [2.91679227, 2.92517616, 2.53774810],
-        "imaginary": [3.08474983, 2.93861411, 2.74620057]
-      }
+      "specular_reflectance": 0.25,
+      "ior": "data/spectral-distributions/silver.csv"
     },
     "floor": {
-      "reflectance": [0.8,0.75,0.7]
+      "reflectance": 0.75
     },
     "dragon": {
-      "transmittance": "#ace6d6",
+      "transmittance": 1.0,
       "specular_reflectance": 1.0,
       "specular_roughness": 0.2,
       "transparency": 1.0,
       "ior": 1.5
+    },
+    "glow-sphere": {
+      "emittance": { "illuminant": "A", "scale": 20 }
+    },
+    "blue-glow-sphere": {
+      "emittance": { "illuminant": "D75", "scale": 1 }
+    },
+    "white-matte": {
+      "reflectance": 0.85
     }
   },
 
@@ -82,6 +87,45 @@
       "material": "dragon",
       "smooth":  true,
       "file": "data/stanford_dragon_fullres.obj"
+    },
+    {
+      "type": "sphere",
+      "radius": 1.5,
+      "material": "glow-sphere",
+      "origin": [9.5, -3.48, -3.25]
+    },
+    {
+      "type": "sphere",
+      "radius": 1.25,
+      "material": "white-matte",
+      "origin": [5.5, -3.73, 3.5]
+    },
+    {
+      "type": "sphere",
+      "radius": 0.1,
+      "origin": [5.1, -4.88, 2.5]
+    },
+    {
+      "type": "sphere",
+      "radius": 0.2,
+      "material": "blue-glow-sphere",
+      "origin": [5.7, -4.78, 1.9]
+    },
+    {
+      "type": "sphere",
+      "radius": 0.75,
+      "material": "white-matte",
+      "origin": [6.5, -4.23, -4.6]
+    },
+    {
+      "type": "sphere",
+      "radius": 0.15,
+      "origin": [4.9, -4.83, 1.5]
+    },
+    {
+      "type": "sphere",
+      "radius": 0.05,
+      "origin": [4.7, -4.93, 2.1]
     }
   ]
 }
