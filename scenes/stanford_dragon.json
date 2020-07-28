@@ -8,7 +8,7 @@
       "sensor_width": 35,
       "eye": [ -12, -0.05, 2 ],
       "look_at": [ 8, -1.9, -0.4 ],
-      "image":  { "width": 1280, "height": 720, "exposure_compensation": -2, "gain_compensation": 0.0, "tonemapper": "ACES" },
+      "image":  { "width": 960, "height": 540, "exposure_compensation": -2, "gain_compensation": 0.0, "tonemapper": "ACES" },
       "sqrtspp": 4,
       "savename": "stanford_dragon_frosted"
     }
@@ -53,9 +53,6 @@
     },
     "blue-glow-sphere": {
       "emittance": { "illuminant": "D75", "scale": 1 }
-    },
-    "white-matte": {
-      "reflectance": 0.85
     }
   },
 
@@ -97,7 +94,6 @@
     {
       "type": "sphere",
       "radius": 1.25,
-      "material": "white-matte",
       "origin": [5.5, -3.73, 3.5]
     },
     {
@@ -114,7 +110,6 @@
     {
       "type": "sphere",
       "radius": 0.75,
-      "material": "white-matte",
       "origin": [6.5, -4.23, -4.6]
     },
     {
