@@ -35,14 +35,13 @@
   "materials": {
     "default": {
       "specular_roughness": 0.05,
-      "specular_reflectance": 0.25,
-      "ior": "data/spectral-distributions/silver.csv"
+      "ior": "data/spectral-distributions/graphite.csv"
     },
     "floor": {
-      "reflectance": 0.75
+      "reflectance": 0.8
     },
     "dragon": {
-      "transmittance": 1.0,
+      "transmittance": "#f2fffe",
       "specular_reflectance": 1.0,
       "specular_roughness": 0.2,
       "transparency": 1.0,

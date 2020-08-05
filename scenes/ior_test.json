@@ -15,7 +15,7 @@
         "width": 512,
         "height": 512
       },
-      "sqrtspp": 32,
+      "sqrtspp": 16,
       "savename": "ior_test"
     }
   ],
