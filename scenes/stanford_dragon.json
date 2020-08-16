@@ -34,14 +34,17 @@
 
   "materials": {
     "default": {
-      "specular_roughness": 0.05,
       "ior": "data/spectral-distributions/graphite.csv"
     },
     "floor": {
-      "reflectance": 0.8
+      "reflectance": 0.85
+    },
+    "backwall": {
+      "perfect_mirror": true,
+      "specular_roughness": 0.04
     },
     "dragon": {
-      "transmittance": "#f2fffe",
+      "transmittance": 1.0,
       "specular_reflectance": 1.0,
       "specular_roughness": 0.2,
       "transparency": 1.0,
@@ -50,8 +53,8 @@
     "glow-sphere": {
       "emittance": { "illuminant": "A", "scale": 20 }
     },
-    "blue-glow-sphere": {
-      "emittance": { "illuminant": "D75", "scale": 1 }
+    "small-glow-sphere": {
+      "emittance": { "illuminant": "A", "scale": 1 }
     }
   },
 
@@ -73,7 +76,14 @@
         [6, 7, 4],
         [7, 5, 4],
         [0, 1, 2],
-        [1, 3, 2],
+        [1, 3, 2]
+      ]
+    },
+    {
+      "type": "object",
+      "vertex_set": "room",
+      "material": "backwall",
+      "triangles": [
         [2, 3, 6],
         [3, 7, 6]
       ]
@@ -103,7 +113,7 @@
     {
       "type": "sphere",
       "radius": 0.2,
-      "material": "blue-glow-sphere",
+      "material": "small-glow-sphere",
       "origin": [5.7, -4.78, 1.9]
     },
     {
