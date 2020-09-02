@@ -60,31 +60,27 @@
 
   "surfaces": [
     {
-      "origin": 0,
       "radius": 1,
       "material": "ior1",
       "type": "sphere"
     },
     {
-      "origin": 0,
       "radius": 0.6,
       "material": "ior2",
       "type": "sphere"
     },
     {
-      "origin": 0,
       "radius": 0.4,
       "material": "ior3",
       "type": "sphere"
     },
     {
-      "origin": 0,
       "radius": 0.2,
       "material": "ior4",
       "type": "sphere"
     },
     {
-      "origin": [-10, 10, -10],
+      "position": [-10, 10, -10],
       "radius": 0.5,
       "material": "light",
       "type": "sphere"

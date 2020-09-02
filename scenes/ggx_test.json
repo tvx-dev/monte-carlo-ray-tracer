@@ -94,55 +94,55 @@
     {
       "type": "sphere",
       "radius": 1,
-      "origin": [ -7, 1, 0 ],
+      "position": [ -7, 1, 0 ],
       "material": "gray_0.0"
     },
     {
       "type": "sphere",
       "radius": 1,
-      "origin": [ -5, 1, 0 ],
+      "position": [ -5, 1, 0 ],
       "material": "gray_0.25"
     },
     {
       "type": "sphere",
       "radius": 1,
-      "origin": [ -3, 1, 0 ],
+      "position": [ -3, 1, 0 ],
       "material": "gray_0.5"
     },
     {
       "type": "sphere",
       "radius": 1,
-      "origin": [ -1, 1, 0 ],
+      "position": [ -1, 1, 0 ],
       "material": "gray_1.0"
     },
     {
       "type": "sphere",
       "radius": 1,
-      "origin": [ 1, 1, 0 ],
+      "position": [ 1, 1, 0 ],
       "material": "gray_2.0"
     },
     {
       "type": "sphere",
       "radius": 1,
-      "origin": [ 3, 1, 0 ],
+      "position": [ 3, 1, 0 ],
       "material": "gray_4.0"
     },
     {
       "type": "sphere",
       "radius": 1,
-      "origin": [ 5, 1, 0 ],
+      "position": [ 5, 1, 0 ],
       "material": "gray_8.0"
     },
     {
       "type": "sphere",
       "radius": 1,
-      "origin": [ 7, 1, 0 ],
+      "position": [ 7, 1, 0 ],
       "material": "gray_16.0"
     },
     {
       "type": "sphere",
       "radius": 1.0,
-      "origin": [ -1, 10, 10 ],
+      "position": [ -1, 10, 10 ],
       "material": "light"
     }
   ]

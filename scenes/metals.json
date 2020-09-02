@@ -77,55 +77,55 @@
     {
       "type": "sphere",
       "radius": 1,
-      "origin": [ -7.105, 1, 0 ],
+      "position": [ -7.105, 1, 0 ],
       "material": "gold"
     },
     {
       "type": "sphere",
       "radius": 1,
-      "origin": [ -5.075, 1, 0 ],
+      "position": [ -5.075, 1, 0 ],
       "material": "silver"
     },
     {
       "type": "sphere",
       "radius": 1,
-      "origin": [ -3.045, 1, 0 ],
+      "position": [ -3.045, 1, 0 ],
       "material": "copper"
     },
     {
       "type": "sphere",
       "radius": 1,
-      "origin": [ -1.015, 1, 0 ],
+      "position": [ -1.015, 1, 0 ],
       "material": "iron"
     },
     {
       "type": "sphere",
       "radius": 1,
-      "origin": [ 1.015, 1, 0 ],
+      "position": [ 1.015, 1, 0 ],
       "material": "aluminium"
     },
     {
       "type": "sphere",
       "radius": 1,
-      "origin": [ 3.045, 1, 0 ],
+      "position": [ 3.045, 1, 0 ],
       "material": "mercury"
     },
     {
       "type": "sphere",
       "radius": 1,
-      "origin": [ 5.075, 1, 0 ],
+      "position": [ 5.075, 1, 0 ],
       "material": "nickel"
     },
     {
       "type": "sphere",
       "radius": 1,
-      "origin": [ 7.105, 1, 0 ],
+      "position": [ 7.105, 1, 0 ],
       "material": "palladium"
     },
     {
       "type": "sphere",
       "radius": 1,
-      "origin": [ 0, 50, 20 ],
+      "position": [ 0, 50, 20 ],
       "material": "light"
     }
   ]

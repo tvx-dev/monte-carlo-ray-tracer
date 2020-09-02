@@ -91,35 +91,35 @@
       "type": "object",
       "smooth":  true,
       "material": "gold",
-      "origin": [1.75, 0, 0],
+      "position": [1.75, 0, 0],
       "file": "data/bunny.obj"
     },
     {
       "type": "object",
       "smooth":  true,
       "material": "palladium",
-      "origin": [-1.75, 0, 0],
+      "position": [-1.75, 0, 0],
       "file": "data/bunny.obj"
     },
     {
       "type": "object",
       "smooth":  true,
       "material": "nickel",
-      "origin": [0, 1.77, 0],
+      "position": [0, 1.77, 0],
       "file": "data/bunny.obj"
     },
     {
       "type": "object",
       "smooth":  true,
       "material": "iron",
-      "origin": [1.75, 1.77, 0],
+      "position": [1.75, 1.77, 0],
       "file": "data/bunny.obj"
     },
     {
       "type": "object",
       "smooth":  true,
       "material": "copper",
-      "origin": [-1.75, 1.77, 0],
+      "position": [-1.75, 1.77, 0],
       "file": "data/bunny.obj"
     },
     {
@@ -135,7 +135,7 @@
       "type": "sphere",
       "material": "light",
       "radius": 0.5,
-      "origin": [1, 5.1, 4.15]
+      "position": [1, 5.1, 4.15]
     }
   ]
 }
